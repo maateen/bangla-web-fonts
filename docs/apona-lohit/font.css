@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'AponaLohit';
+  src: url('AponaLohit.eot');
+  src: url('AponaLohit.woff') format('woff'),
+       url('AponaLohit.ttf') format('truetype'),
+       url('AponaLohit.svg#AponaLohit') format('svg'),
+       url('AponaLohit.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

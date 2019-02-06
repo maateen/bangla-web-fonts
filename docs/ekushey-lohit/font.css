@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'EkusheyLohit';
+  src: url('EkusheyLohit.eot');
+  src: url('EkusheyLohit.woff') format('woff'),
+       url('EkusheyLohit.ttf') format('truetype'),
+       url('EkusheyLohit.svg#Ekushey_Lohit') format('svg'),
+       url('EkusheyLohit.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

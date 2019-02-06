@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'CharukolaUltraLight';
+  src: url('CharukolaUltraLight.eot');
+  src: url('CharukolaUltraLight.woff') format('woff'),
+       url('CharukolaUltraLight.ttf') format('truetype'),
+       url('CharukolaUltraLight.eot?#iefix') format('embedded-opentype'),
+       url('CharukolaUltraLight.svg#CharukolaUltraLightUnicode') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

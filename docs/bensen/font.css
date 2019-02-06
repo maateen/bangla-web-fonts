@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'BenSen';
+  src: url('BenSen.eot');
+  src: url('BenSen.woff') format('woff'),
+       url('BenSen.ttf') format('truetype'),
+       url('BenSen.svg#BenSen') format('svg'),
+       url('BenSen.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Mukti';
+  src: url('Mukti.eot');
+  src: url('Mukti.woff') format('woff'),
+       url('Mukti.ttf') format('truetype'),
+       url('Mukti.svg#Mukti') format('svg'),
+       url('Mukti.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -2,6 +2,7 @@ baseURL = "https://fonts.maateen.me/"
 languageCode = "en-us"
 title = "Bangla Web Fonts"
 theme = "hugo-theme-learn"
+publishDir = "docs"
 
 [frontmatter]
 date = ["date","publishDate", "lastmod"]
