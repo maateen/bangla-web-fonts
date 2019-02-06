@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'CharuChandanHardStroke';
+  src: url('CharuChandanHardStroke.eot');
+  src: url('CharuChandanHardStroke.woff') format('woff'),
+       url('CharuChandanHardStroke.ttf') format('truetype'),
+       url('CharuChandanHardStroke.eot?#iefix') format('embedded-opentype'),
+       url('CharuChandanHardStroke.svg#CharuChandanHardStrokeUnicode') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
