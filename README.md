@@ -4,7 +4,7 @@ The aim of this project is making the web more beautiful, fast, and open through
 
 ## AdorshoLipi
 
-![AdorshoLipi](images/adorsholipi.jpg)
+![AdorshoLipi](static/images/adorsholipi.jpg)
 
 Font Source: cgimagine
 
@@ -44,7 +44,7 @@ body {
 
 ## AponaLohit
 
-![AponaLohit](images/aponalohit.jpg)
+![AponaLohit](static/images/aponalohit.jpg)
 
 AponaLohit is basically the Lohit font from Ekushey with additional hinting for better look on screen. This is some wthat Unicode equivalent of popular Boishakhi font. TrueType hintings have been initiated by Ershadul Haq and later improved by Alamgir Mohammed.
 
@@ -84,7 +84,7 @@ body {
 
 ## Bangla
 
-![Bangla](images/bangla.gif)
+![Bangla](static/images/bangla.gif)
 
 Font Source: PfEd
 
@@ -124,7 +124,7 @@ body {
 
 ## BenSen
 
-![BenSen](images/bensen.jpg)
+![BenSen](static/images/bensen.jpg)
 
 Developer: [Subrata Sen](http://www.subratasen.com/)
 
@@ -164,7 +164,7 @@ body {
 
 ## CharuChandan3D
 
-![CharuChandan3D](images/charu-chandan-3d.jpg)
+![CharuChandan3D](static/images/charu-chandan-3d.jpg)
 
 Font Source: [Charu Chandan](http://www.charuchandan.com/)
 
@@ -204,7 +204,7 @@ body {
 
 ## CharuChandanHardStroke
 
-![CharuChandanHardStroke](images/charu-chandan-hard-stroke.jpg)
+![CharuChandanHardStroke](static/images/charu-chandan-hard-stroke.jpg)
 
 Font Source: [Charu Chandan](http://www.charuchandan.com/)
 
@@ -244,7 +244,7 @@ body {
 
 ## CharukolaUltraLight
 
-![CharukolaUltraLight](images/charukola-ultra-light.jpg)
+![CharukolaUltraLight](static/images/charukola-ultra-light.jpg)
 
 Font Source: [Charu Chandan](http://www.charuchandan.com/)
 
@@ -284,7 +284,7 @@ body {
 
 ## EkusheyLohit
 
-![EkusheyLohit](images/ekushey-lohit.jpg)
+![EkusheyLohit](static/images/ekushey-lohit.jpg)
 
 Glyphs of Ekushey Lohit font has been taken from Lohit Bengali designed by Automatic Control Equipments. Unicode conversion was done by Ekushey. The font is distributed under SIL Open Font License,  v1.0. Font Source: [Free Bangla Font Project](http://www.nongnu.org/freebangfont/)
 
@@ -324,7 +324,7 @@ body {
 
 ## Kalpurush
 
-![Kalpurush](images/kalpurush.jpg)
+![Kalpurush](static/images/kalpurush.jpg)
 
 Font designed by - Md. Tanbin Islam Siyam. Developed Under Avro Free Bangla Font Project. Source: [OmicronLab](http://www.omicronlab.com/)
 
@@ -364,7 +364,7 @@ body {
 
 ## Mukti
 
-![Mukti](images/mukti.jpg)
+![Mukti](static/images/mukti.jpg)
 
 Developed by Dr. Anirban Mitra. Font Source: [Free Bangla Font Project](http://www.nongnu.org/freebangfont/)
 
@@ -404,7 +404,7 @@ body {
 
 ## SiyamRupali
 
-![SiyamRupali](images/siyam-rupali.jpg)
+![SiyamRupali](static/images/siyam-rupali.jpg)
 
 Font Hinted by - Md. Tanbin Islam Siyam. Modified version of Rupali Bangla font. Developed Under Avro Free Bangla Font Project. Source: [OmicronLab](http://www.omicronlab.com/)
 
@@ -444,7 +444,7 @@ body {
 
 ## SolaimanLipi
 
-![SolaimanLipi](images/solaimanlipi.jpg)
+![SolaimanLipi](static/images/solaimanlipi.jpg)
 
 SolaimanLipi is designed by Solaiman Karim. Later, Saif Hassan updated the font. The font is distributed under GPL v2. Font Source: [http://ekushey.org/](http://ekushey.org/)
 
