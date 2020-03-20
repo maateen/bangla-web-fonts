@@ -1,45 +1,38 @@
 [
 {
-	"uri": "https://fonts.maateen.me/googlefa98c8616aeb58a4/",
-	"title": "",
-	"tags": [],
-	"description": "",
-	"content": "google-site-verification: googlefa98c8616aeb58a4.html"
-},
-{
 	"uri": "https://fonts.maateen.me/adorsho-lipi/",
 	"title": "Adorsho Lipi",
 	"tags": [],
 	"description": "",
-	"content": " Adorsho Lipi Font Source: cgimagine\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/adorsho-lipi/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/adorsho-lipi/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'AdorshoLipi', sans-serif;  Example body { font-family: 'AdorshoLipi', Arial, sans-serif !important; }  "
+	"content": "Adorsho Lipi Font Source: cgimagine\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/adorsho-lipi/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/adorsho-lipi/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;AdorshoLipi\u0026#39;, sans-serif; Example body { font-family: \u0026#39;AdorshoLipi\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/apona-lohit/",
 	"title": "Apona Lohit",
 	"tags": [],
 	"description": "",
-	"content": " Apona Lohit AponaLohit is basically the Lohit font from Ekushey with additional hinting for better look on screen. This is some wthat Unicode equivalent of popular Boishakhi font. TrueType hintings have been initiated by Ershadul Haq and later improved by Alamgir Mohammed.\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/apona-lohit/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/apona-lohit/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'AponaLohit', sans-serif;  Example body { font-family: 'AponaLohit', Arial, sans-serif !important; }  s\n"
+	"content": "Apona Lohit AponaLohit is basically the Lohit font from Ekushey with additional hinting for better look on screen. This is some wthat Unicode equivalent of popular Boishakhi font. TrueType hintings have been initiated by Ershadul Haq and later improved by Alamgir Mohammed.\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/apona-lohit/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/apona-lohit/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;AponaLohit\u0026#39;, sans-serif; Example body { font-family: \u0026#39;AponaLohit\u0026#39;, Arial, sans-serif !important; } s\n"
 },
 {
 	"uri": "https://fonts.maateen.me/bangla/",
 	"title": "Bangla",
 	"tags": [],
 	"description": "",
-	"content": " Bangla Font Source: PfEd\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/bangla/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/bangla/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'Bangla', sans-serif;  Example body { font-family: 'Bangla', Arial, sans-serif !important; }  "
+	"content": "Bangla Font Source: PfEd\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/bangla/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/bangla/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;Bangla\u0026#39;, sans-serif; Example body { font-family: \u0026#39;Bangla\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/",
 	"title": "Bangla Font CDN",
 	"tags": [],
 	"description": "",
-	"content": " Bangla Web Fonts The aim of this project is making the web more beautiful, fast, and open through great Bengali typographies with one of the fastest Global CDN. Currently, the fonts listed on the left are supported (though more fonts are coming soon).\nContributors Conversion to eot, svg, woff by Maksudur Rahman Maateen\nCSS rules for fonts written by Maksudur Rahman Maateen\nCore ttf Fonts have been developed by various developers, known developers have been stated above already. We show respect and bow to them.\n"
+	"content": "Bangla Web Fonts The aim of this project is making the web more beautiful, fast, and open through great Bengali typographies with one of the fastest Global CDN. Currently, the fonts listed on the left are supported (though more fonts are coming soon).\nContributors Conversion to eot, svg, woff by Maksudur Rahman Maateen\nCSS rules for fonts written by Maksudur Rahman Maateen\nCore ttf Fonts have been developed by various developers, known developers have been stated above already. We show respect and bow to them.\n"
 },
 {
 	"uri": "https://fonts.maateen.me/bensen/",
 	"title": "BenSen",
 	"tags": [],
 	"description": "",
-	"content": " BenSen Developer: Subrata Sen\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/bensen/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/bensen/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'BenSen', sans-serif;  Example body { font-family: 'BenSen', Arial, sans-serif !important; }  "
+	"content": "BenSen Developer: Subrata Sen\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/bensen/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/bensen/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;BenSen\u0026#39;, sans-serif; Example body { font-family: \u0026#39;BenSen\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/categories/",
@@ -53,56 +46,56 @@
 	"title": "Charu Chandan 3D",
 	"tags": [],
 	"description": "",
-	"content": " Charu Chandan 3D Font Source: Charu Chandan\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/charu-chandan-3d/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/charu-chandan-3d/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'CharuChandan3D', sans-serif;  Example body { font-family: 'CharuChandan3D', Arial, sans-serif !important; }  "
+	"content": "Charu Chandan 3D Font Source: Charu Chandan\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/charu-chandan-3d/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/charu-chandan-3d/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;CharuChandan3D\u0026#39;, sans-serif; Example body { font-family: \u0026#39;CharuChandan3D\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/charu-chandan-hard-stroke/",
 	"title": "Charu Chandan HardStroke",
 	"tags": [],
 	"description": "",
-	"content": " CharuChandanHardStroke Font Source: Charu Chandan\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/charu-chandan-hard-stroke/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/charu-chandan-hard-stroke/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'CharuChandanHardStroke', sans-serif;  Example body { font-family: 'CharuChandanHardStroke', Arial, sans-serif !important; }  "
+	"content": "CharuChandanHardStroke Font Source: Charu Chandan\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/charu-chandan-hard-stroke/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/charu-chandan-hard-stroke/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;CharuChandanHardStroke\u0026#39;, sans-serif; Example body { font-family: \u0026#39;CharuChandanHardStroke\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/charukola-ultra-light/",
 	"title": "Charukola Ultra Light",
 	"tags": [],
 	"description": "",
-	"content": " Charukola Ultra Light Font Source: Charu Chandan\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/charukola-ultra-light/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/charukola-ultra-light/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'CharukolaUltraLight', sans-serif;  Example body { font-family: 'CharukolaUltraLight', Arial, sans-serif !important; }  "
+	"content": "Charukola Ultra Light Font Source: Charu Chandan\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/charukola-ultra-light/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/charukola-ultra-light/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;CharukolaUltraLight\u0026#39;, sans-serif; Example body { font-family: \u0026#39;CharukolaUltraLight\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/ekushey-lohit/",
 	"title": "Ekushey Lohit",
 	"tags": [],
 	"description": "",
-	"content": " Ekushey Lohit Glyphs of Ekushey Lohit font has been taken from Lohit Bengali designed by Automatic Control Equipments. Unicode conversion was done by Ekushey. The font is distributed under SIL Open Font License, v1.0. Font Source: Free Bangla Font Project\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/ekushey-lohit/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/ekushey-lohit/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'EkusheyLohit', sans-serif;  Example body { font-family: 'EkusheyLohit', Arial, sans-serif !important; }  "
+	"content": "Ekushey Lohit Glyphs of Ekushey Lohit font has been taken from Lohit Bengali designed by Automatic Control Equipments. Unicode conversion was done by Ekushey. The font is distributed under SIL Open Font License, v1.0. Font Source: Free Bangla Font Project\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/ekushey-lohit/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/ekushey-lohit/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;EkusheyLohit\u0026#39;, sans-serif; Example body { font-family: \u0026#39;EkusheyLohit\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/kalpurush/",
 	"title": "Kalpurush",
 	"tags": [],
 	"description": "",
-	"content": " Kalpurush Font designed by - Md. Tanbin Islam Siyam. Developed Under Avro Free Bangla Font Project. Source: OmicronLab\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/kalpurush/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/kalpurush/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'Kalpurush', sans-serif;  Example body { font-family: 'Kalpurush', Arial, sans-serif !important; }  "
+	"content": "Kalpurush Font designed by - Md. Tanbin Islam Siyam. Developed Under Avro Free Bangla Font Project. Source: OmicronLab\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/kalpurush/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/kalpurush/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;Kalpurush\u0026#39;, sans-serif; Example body { font-family: \u0026#39;Kalpurush\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/mukti/",
 	"title": "Mukti",
 	"tags": [],
 	"description": "",
-	"content": " Mukti Developed by Dr. Anirban Mitra. Font Source: Free Bangla Font Project\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/mukti/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/mukti/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'Mukti', sans-serif;  Example body { font-family: 'Mukti', Arial, sans-serif !important; }  "
+	"content": "Mukti Developed by Dr. Anirban Mitra. Font Source: Free Bangla Font Project\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/mukti/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/mukti/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;Mukti\u0026#39;, sans-serif; Example body { font-family: \u0026#39;Mukti\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/siyam-rupali/",
 	"title": "Siyam Rupali",
 	"tags": [],
 	"description": "",
-	"content": " Siyam Rupali Font Hinted by - Md. Tanbin Islam Siyam. Modified version of Rupali Bangla font. Developed Under Avro Free Bangla Font Project. Source: OmicronLab\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/siyam-rupali/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/siyam-rupali/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'SiyamRupali', sans-serif;  Example body { font-family: 'SiyamRupali', Arial, sans-serif !important; }  "
+	"content": "Siyam Rupali Font Hinted by - Md. Tanbin Islam Siyam. Modified version of Rupali Bangla font. Developed Under Avro Free Bangla Font Project. Source: OmicronLab\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/siyam-rupali/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/siyam-rupali/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;SiyamRupali\u0026#39;, sans-serif; Example body { font-family: \u0026#39;SiyamRupali\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/solaiman-lipi/",
 	"title": "Solaiman Lipi",
 	"tags": [],
 	"description": "",
-	"content": " Solaiman Lipi SolaimanLipi is designed by Solaiman Karim. Later, Saif Hassan updated the font. The font is distributed under GPL v2. Font Source: http://ekushey.org/\nEmbed Font To embed your selected fonts into a webpage, copy this code into the  of your HTML document.\nSTANDARD \u0026lt;link href=\u0026quot;https://fonts.maateen.me/solaiman-lipi/font.css\u0026quot; rel=\u0026quot;stylesheet\u0026quot;\u0026gt;  Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url('https://fonts.maateen.me/solaiman-lipi/font.css'); \u0026lt;/style\u0026gt;  Specify in CSS Use the following CSS rules to specify these families:\nfont-family: 'SolaimanLipi', sans-serif;  Example body { font-family: 'SolaimanLipi', Arial, sans-serif !important; }  "
+	"content": "Solaiman Lipi SolaimanLipi is designed by Solaiman Karim. Later, Saif Hassan updated the font. The font is distributed under GPL v2. Font Source: http://ekushey.org/\nEmbed Font To embed your selected fonts into a webpage, copy this code into the of your HTML document.\nSTANDARD \u0026lt;link href=\u0026#34;https://fonts.maateen.me/solaiman-lipi/font.css\u0026#34; rel=\u0026#34;stylesheet\u0026#34;\u0026gt; Or, IMPORT in CSS \u0026lt;style\u0026gt; @import url(\u0026#39;https://fonts.maateen.me/solaiman-lipi/font.css\u0026#39;); \u0026lt;/style\u0026gt; Specify in CSS Use the following CSS rules to specify these families:\nfont-family: \u0026#39;SolaimanLipi\u0026#39;, sans-serif; Example body { font-family: \u0026#39;SolaimanLipi\u0026#39;, Arial, sans-serif !important; } "
 },
 {
 	"uri": "https://fonts.maateen.me/tags/",
