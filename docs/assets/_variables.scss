@@ -1,0 +1,17 @@
+/* You can override SASS variables here. */
+
+// @import "plugins/dark";
+
+// Used in layout
+$font-size-base: 17px;
+
+// Grayscale
+$color-link: #2980b9;
+$color-visited-link: #8e44ad;
+
+// Hint colors
+$hint-colors: (
+    info: #3498db,
+    warning: #f1c40f,
+    danger: #e74c3c
+);

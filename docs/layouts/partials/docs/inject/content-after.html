@@ -1,0 +1,11 @@
+{{ if and .Site.Params.BookComments (not .IsHome) }}
+<h2>Comment</h2>
+<script src="https://utteranc.es/client.js"
+        repo="maateen/bangla-web-fonts"
+        issue-term="title"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+{{ end }}

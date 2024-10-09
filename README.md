@@ -8,17 +8,17 @@ The aim of this project is making the web more beautiful, fast, and open through
 
 Font Source: cgimagine
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/adorsho-lipi/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -26,9 +26,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'AdorshoLipi', sans-serif;
@@ -38,7 +38,7 @@ font-family: 'AdorshoLipi', sans-serif;
 
 ```css
 body {
-    font-family: 'AdorshoLipi', Arial, sans-serif !important;
+    font-family: 'AdorshoLipi', sans-serif;
 }
 ```
 
@@ -48,17 +48,17 @@ body {
 
 AponaLohit is basically the Lohit font from Ekushey with additional hinting for better look on screen. This is some wthat Unicode equivalent of popular Boishakhi font. TrueType hintings have been initiated by Ershadul Haq and later improved by Alamgir Mohammed.
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/apona-lohit/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -66,9 +66,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'AponaLohit', sans-serif;
@@ -78,7 +78,7 @@ font-family: 'AponaLohit', sans-serif;
 
 ```css
 body {
-    font-family: 'AponaLohit', Arial, sans-serif !important;
+    font-family: 'AponaLohit', sans-serif;
 }
 ```
 
@@ -88,17 +88,17 @@ body {
 
 Font Source: PfEd
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/bangla/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -106,9 +106,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'Bangla', sans-serif;
@@ -118,7 +118,7 @@ font-family: 'Bangla', sans-serif;
 
 ```css
 body {
-    font-family: 'Bangla', Arial, sans-serif !important;
+    font-family: 'Bangla', sans-serif;
 }
 ```
 
@@ -128,17 +128,17 @@ body {
 
 Developer: [Subrata Sen](http://www.subratasen.com/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/bensen/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -146,9 +146,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'BenSen', sans-serif;
@@ -158,7 +158,7 @@ font-family: 'BenSen', sans-serif;
 
 ```css
 body {
-    font-family: 'BenSen', Arial, sans-serif !important;
+    font-family: 'BenSen', sans-serif;
 }
 ```
 
@@ -168,17 +168,17 @@ body {
 
 Font Source: [Charu Chandan](http://www.charuchandan.com/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/charu-chandan-3d/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -186,9 +186,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'CharuChandan3D', sans-serif;
@@ -198,7 +198,7 @@ font-family: 'CharuChandan3D', sans-serif;
 
 ```css
 body {
-    font-family: 'CharuChandan3D', Arial, sans-serif !important;
+    font-family: 'CharuChandan3D', sans-serif;
 }
 ```
 
@@ -208,17 +208,17 @@ body {
 
 Font Source: [Charu Chandan](http://www.charuchandan.com/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/charu-chandan-hard-stroke/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -226,9 +226,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'CharuChandanHardStroke', sans-serif;
@@ -238,7 +238,7 @@ font-family: 'CharuChandanHardStroke', sans-serif;
 
 ```css
 body {
-    font-family: 'CharuChandanHardStroke', Arial, sans-serif !important;
+    font-family: 'CharuChandanHardStroke', sans-serif;
 }
 ```
 
@@ -248,17 +248,17 @@ body {
 
 Font Source: [Charu Chandan](http://www.charuchandan.com/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/charukola-ultra-light/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -266,9 +266,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'CharukolaUltraLight', sans-serif;
@@ -278,7 +278,7 @@ font-family: 'CharukolaUltraLight', sans-serif;
 
 ```css
 body {
-    font-family: 'CharukolaUltraLight', Arial, sans-serif !important;
+    font-family: 'CharukolaUltraLight', sans-serif;
 }
 ```
 
@@ -288,17 +288,17 @@ body {
 
 Glyphs of Ekushey Lohit font has been taken from Lohit Bengali designed by Automatic Control Equipments. Unicode conversion was done by Ekushey. The font is distributed under SIL Open Font License,  v1.0. Font Source: [Free Bangla Font Project](http://www.nongnu.org/freebangfont/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/ekushey-lohit/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -306,9 +306,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'EkusheyLohit', sans-serif;
@@ -318,7 +318,7 @@ font-family: 'EkusheyLohit', sans-serif;
 
 ```css
 body {
-    font-family: 'EkusheyLohit', Arial, sans-serif !important;
+    font-family: 'EkusheyLohit', sans-serif;
 }
 ```
 
@@ -328,17 +328,17 @@ body {
 
 Font designed by - Md. Tanbin Islam Siyam. Developed Under Avro Free Bangla Font Project. Source: [OmicronLab](http://www.omicronlab.com/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -346,9 +346,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'Kalpurush', sans-serif;
@@ -358,7 +358,7 @@ font-family: 'Kalpurush', sans-serif;
 
 ```css
 body {
-    font-family: 'Kalpurush', Arial, sans-serif !important;
+    font-family: 'Kalpurush', sans-serif;
 }
 ```
 
@@ -368,17 +368,17 @@ body {
 
 Developed by Dr. Anirban Mitra. Font Source: [Free Bangla Font Project](http://www.nongnu.org/freebangfont/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/mukti/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -386,9 +386,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'Mukti', sans-serif;
@@ -398,7 +398,7 @@ font-family: 'Mukti', sans-serif;
 
 ```css
 body {
-    font-family: 'Mukti', Arial, sans-serif !important;
+    font-family: 'Mukti', sans-serif;
 }
 ```
 
@@ -408,17 +408,17 @@ body {
 
 Font Hinted by - Md. Tanbin Islam Siyam. Modified version of Rupali Bangla font. Developed Under Avro Free Bangla Font Project. Source: [OmicronLab](http://www.omicronlab.com/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/siyam-rupali/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -426,9 +426,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'SiyamRupali', sans-serif;
@@ -438,7 +438,7 @@ font-family: 'SiyamRupali', sans-serif;
 
 ```css
 body {
-    font-family: 'SiyamRupali', Arial, sans-serif !important;
+    font-family: 'SiyamRupali', sans-serif;
 }
 ```
 
@@ -448,17 +448,17 @@ body {
 
 SolaimanLipi is designed by Solaiman Karim. Later, Saif Hassan updated the font. The font is distributed under GPL v2. Font Source: [http://ekushey.org/](http://ekushey.org/)
 
-### Embed Font
+## Embed Font
 
-To embed your selected fonts into a webpage, copy this code into the <head> of your HTML document.
+To use this font into a website, embed this code in the `<head>` of your HTML document.
 
-##### STANDARD
+#### STANDARD
 
 ```css
 <link href="https://fonts.maateen.me/solaiman-lipi/font.css" rel="stylesheet">
 ```
 
-##### Or, IMPORT in CSS
+#### IMPORT in CSS
 
 ```css
 <style>
@@ -466,9 +466,9 @@ To embed your selected fonts into a webpage, copy this code into the <head> of y
 </style>
 ```
 
-### Specify in CSS
+## Specify in CSS
 
-Use the following CSS rules to specify these families:
+Use the following CSS rule to specify this font-family:
 
 ```css
 font-family: 'SolaimanLipi', sans-serif;
@@ -478,7 +478,7 @@ font-family: 'SolaimanLipi', sans-serif;
 
 ```css
 body {
-    font-family: 'SolaimanLipi', Arial, sans-serif !important;
+    font-family: 'SolaimanLipi', sans-serif;
 }
 ```
 

@@ -1,0 +1,28 @@
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+// cookieconsent
+window.cookieconsent.initialise({
+    theme: "edgeless",
+    position: "bottom-right",
+    revokable: true,
+    type: "opt-out",
+    content: {
+        allow: "Allow cookies",
+        deny: "Refuse cookies",
+        dismiss: "I understand!",
+        policy: "Privacy policy",
+        link: 'Know more',
+        href: "https://maateen.me/privacy-policy/",
+        message: "This website doesn't collect any personal information directly but 3rd-parties like Disqus, Cloudflare and Github might use cookies."
+    },
+    palette: {
+        popup: {
+            background: "#edeff5",
+            text: "#838391"
+        },
+        button: {
+            background: "#4b81e8"
+        }
+    }
+});
+</script>
