@@ -1,0 +1,17 @@
+{{ if len .Params | eq 1 }}
+  <style>
+    @import url('font.css');
+
+    .font-preview {
+      font-family: '{{ .Get 0 }}';
+      font-size: 1.5rem;
+    }
+  </style>
+
+  <p class="font-preview">
+    আমি বাংলায় মাতি উল্লাসে,<br>
+    করি বাংলায় হাহাকার<br>
+    আমি সব দেখে শুনে ক্ষেপে গিয়ে-<br>
+    করি বাংলায় চিৎকার।
+  </p>
+{{ end }}

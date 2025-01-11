@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Adorsho Lipi';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url('adorsho-lipi-v1.0-v1.0.eot');
+  src: url('adorsho-lipi-v1.0-v1.0.woff') format('woff'),
+    url('adorsho-lipi-v1.0-v1.0.ttf') format('truetype'),
+    url('adorsho-lipi-v1.0-v1.0.svg#AdorshoLipi') format('svg'),
+    url('adorsho-lipi-v1.0-v1.0.eot?#iefix') format('embedded-opentype');
+  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
+}
+
+@font-face {
+  font-family: 'AdorshoLipi';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url('adorsho-lipi-v1.0-v1.0.eot');
+  src: url('adorsho-lipi-v1.0-v1.0.woff') format('woff'),
+    url('adorsho-lipi-v1.0-v1.0.ttf') format('truetype'),
+    url('adorsho-lipi-v1.0-v1.0.svg#AdorshoLipi') format('svg'),
+    url('adorsho-lipi-v1.0-v1.0.eot?#iefix') format('embedded-opentype');
+  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
+}
