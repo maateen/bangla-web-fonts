@@ -1,0 +1,144 @@
+name: Hugo site CI/CD
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["master"]
+  # Runs on Pull Requests
+  pull_request:
+    branches: ["master"]
+    types: [opened, synchronize, reopened]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  HUGO_VERSION: 0.140.2
+  # For maximum backward compatibility with Hugo modules
+  HUGO_ENV: production
+  HUGO_ENVIRONMENT: production
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Test job for Pull Requests
+  test:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        run: |
+          hugo version
+
+      - name: Copy fonts in docs/content folder
+        run: |
+          mv fonts docs/content
+
+      - name: Build with Hugo
+        working-directory: docs
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "/"
+
+      - name: Check build output
+        run: |
+          if [ -d "docs/public" ]; then
+            echo "✅ Build successful"
+            echo "Generated files:"
+            ls -la docs/public/
+          else
+            echo "❌ Build failed - 'docs/public' directory not found"
+            exit 1
+          fi
+
+      - name: Check for broken links
+        run: |
+          if find docs/public -name "*.html" -exec grep -l "404.html" {} \;; then
+            echo "⚠️ Warning: Some files contain broken links"
+          else
+            echo "✅ No broken links found"
+          fi
+
+      - name: Upload test artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-build
+          path: docs/public/
+          retention-days: 5
+
+  # Build job
+  build:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+      
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Copy fonts in docs/content folder
+        run: |
+          mv fonts docs/content
+
+      - name: Build with Hugo
+        working-directory: docs
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Upload artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs/public
+
+  # Deployment job
+  deploy:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
