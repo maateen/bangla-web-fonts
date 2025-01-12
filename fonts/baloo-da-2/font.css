@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'Mukti';
+  font-family: 'Baloo Da 2';
   font-style: normal;
   font-weight: 100 900;
   font-stretch: 100%;
   font-display: swap;
-  src: url('mukti-v3.4.3.eot');
-  src: url('mukti-v3.4.3.woff') format('woff'),
-    url('mukti-v3.4.3.ttf') format('truetype'),
-    url('mukti-v3.4.3.svg#AdorshoLipi') format('svg'),
-    url('mukti-v3.4.3.eot?#iefix') format('embedded-opentype');
+  src: url('baloo-da-2.eot');
+  src: url('baloo-da-2.woff') format('woff'),
+    url('baloo-da-2.ttf') format('truetype'),
+    url('baloo-da-2.svg#AdorshoLipi') format('svg'),
+    url('baloo-da-2.eot?#iefix') format('embedded-opentype');
   unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
 }
