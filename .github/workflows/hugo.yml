@@ -3,10 +3,10 @@ name: Hugo site CI/CD
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches: ["main"]
   # Runs on Pull Requests
   pull_request:
-    branches: ["master"]
+    branches: ["main"]
     types: [opened, synchronize, reopened]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
