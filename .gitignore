@@ -5,3 +5,10 @@ docs/public
 docs/resources
 docs/.hugo_build.lock
 themes/hugo-book
+
+# Ignore font files
+*.eot
+*.svg
+*.ttx
+*.woff
+*.woff2

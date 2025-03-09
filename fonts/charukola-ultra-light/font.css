@@ -1,27 +1,17 @@
 @font-face {
   font-family: 'Charukola Ultra Light';
+  font-display: swap;
   font-style: normal;
   font-weight: 100 900;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url('charukola-ultra-light-v1.20.eot');
-  src: url('charukola-ultra-light-v1.20.woff') format('woff'),
-    url('charukola-ultra-light-v1.20.ttf') format('truetype'),
-    url('charukola-ultra-light-v1.20.svg#AdorshoLipi') format('svg'),
-    url('charukola-ultra-light-v1.20.eot?#iefix') format('embedded-opentype');
-  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
+  src: url('charukola-ultra-light-v1.20.woff2') format('woff2'),
+    url('charukola-ultra-light-v1.20.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'CharukolaUltraLight';
+  font-display: swap;
   font-style: normal;
   font-weight: 100 900;
-  font-stretch: 100%;
-  font-display: swap;
-  src: url('charukola-ultra-light-v1.20.eot');
-  src: url('charukola-ultra-light-v1.20.woff') format('woff'),
-    url('charukola-ultra-light-v1.20.ttf') format('truetype'),
-    url('charukola-ultra-light-v1.20.svg#AdorshoLipi') format('svg'),
-    url('charukola-ultra-light-v1.20.eot?#iefix') format('embedded-opentype');
-  unicode-range: U+0951-0952, U+0964-0965, U+0980-09FE, U+1CD0, U+1CD2, U+1CD5-1CD6, U+1CD8, U+1CE1, U+1CEA, U+1CED, U+1CF2, U+1CF5-1CF7, U+200C-200D, U+20B9, U+25CC, U+A8F1;
+  src: url('charukola-ultra-light-v1.20.woff2') format('woff2'),
+    url('charukola-ultra-light-v1.20.ttf') format('truetype');
 }
