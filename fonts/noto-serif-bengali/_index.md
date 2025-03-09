@@ -5,7 +5,7 @@ chapter = false
 
 # Noto Serif Bengali
 
-Noto Serif Bengali is part of Google's comprehensive Noto font family, specifically designed to provide harmonious and elegant serif typography for Bengali script. Developed as part of Google's initiative to create a unified look across all languages on the web, it offers professional-grade typography with extensive character support.
+[Noto Serif Bengali](https://github.com/notofonts/bengali) is part of Google's comprehensive Noto font family, specifically designed to provide harmonious and elegant serif typography for Bengali script. Developed as part of Google's initiative to create a unified look across all languages on the web, it offers professional-grade typography with extensive character support.
 
 ## Preview
 
@@ -54,4 +54,4 @@ body {
 - Consistent cross-platform rendering
 
 ## License
-Licensed under the SIL Open Font License, Version 1.1. Free for both personal and commercial use. Full license details available at [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Serif+Bengali/about).
+Licensed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.1. Free for both personal and commercial use. Full license details available at [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Serif+Bengali/about).
