@@ -1,17 +1,26 @@
 @font-face {
-  font-family: 'Solaiman Lipi';
+  font-family: 'SolaimanLipi';
   font-display: swap;
   font-style: normal;
-  font-weight: 100 900;
-  src: url('solaiman-lipi-v1.0.woff2') format('woff2'),
-    url('solaiman-lipi-v1.0.ttf') format('truetype');
+  font-weight: bold;
+  src: url('solaimanlipi-bold-v1.0.woff2') format('woff2'),
+    url('solaimanlipi-bold-v1.0.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'SolaimanLipi';
   font-display: swap;
   font-style: normal;
-  font-weight: 100 900;
-  src: url('solaiman-lipi-v1.0.woff2') format('woff2'),
-    url('solaiman-lipi-v1.0.ttf') format('truetype');
+  font-weight: normal;
+  src: url('solaimanlipi-normal-v1.0.woff2') format('woff2'),
+    url('solaimanlipi-normal-v1.0.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SolaimanLipi';
+  font-display: swap;
+  font-style: normal;
+  font-weight: light;
+  src: url('solaimanlipi-thin-v1.0.woff2') format('woff2'),
+    url('solaimanlipi-thin-v1.0.ttf') format('truetype');
 }
