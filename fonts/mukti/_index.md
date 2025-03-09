@@ -5,7 +5,7 @@ chapter = false
 
 # Mukti
 
-Mukti is a significant Bengali font developed by Dr. Anirban Mitra under the Free Bangla Font Project. It was created to provide a high-quality, free Bengali font with comprehensive Unicode support, making it particularly suitable for digital publishing and web content.
+[Mukti](https://github.com/mitradranirban/fonts-mukti) is a significant Bengali font developed by [Dr. Anirban Mitra](https://github.com/mitradranirban) under the [Free Bangla Font Project](https://www.nongnu.org/freebangfont/). It was created to provide a high-quality, free Bengali font with comprehensive Unicode support, making it particularly suitable for digital publishing and web content.
 
 ## Preview
 
@@ -52,4 +52,4 @@ body {
 - Cross-platform compatibility
 
 ## License
-Released under the GNU General Public License as part of the Free Bangla Font Project. Free for both personal and commercial use.
+Released under the [GNU General Public License](https://github.com/mitradranirban/fonts-mukti/blob/master/LICENCE) as part of the Free Bangla Font Project. Free for both personal and commercial use.
