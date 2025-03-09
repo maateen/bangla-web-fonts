@@ -2,7 +2,34 @@
   font-family: 'Mukti';
   font-display: swap;
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: normal;
   src: url('mukti-v3.4.3.woff2') format('woff2'),
     url('mukti-v3.4.3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mukti';
+  font-display: swap;
+  font-style: italic;
+  font-weight: normal;
+  src: url('muktiita-v3.4.3.woff2') format('woff2'),
+    url('muktiita-v3.4.3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mukti';
+  font-display: swap;
+  font-style: normal;
+  font-weight: bold;
+  src: url('muktibold-v3.4.3.woff2') format('woff2'),
+    url('muktibold-v3.4.3.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mukti';
+  font-display: swap;
+  font-style: italic;
+  font-weight: bold;
+  src: url('muktibi-v3.4.3.woff2') format('woff2'),
+    url('muktibi-v3.4.3.ttf') format('truetype');
 }
