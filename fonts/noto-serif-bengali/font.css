@@ -2,7 +2,25 @@
   font-family: 'Noto Serif Bengali';
   font-display: swap;
   font-style: normal;
-  font-weight: 100 900;
-  src: url('noto-serif-bengali.woff2') format('woff2'),
-    url('noto-serif-bengali.ttf') format('truetype');
+  font-weight: bold;
+  src: url('noto-serif-bengali-bold-v2.003.woff2') format('woff2'),
+    url('noto-serif-bengali-bold-v2.003.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Serif Bengali';
+  font-display: swap;
+  font-style: normal;
+  font-weight: light;
+  src: url('noto-serif-bengali-light-v2.003.woff2') format('woff2'),
+    url('noto-serif-bengali-light-v2.003.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Serif Bengali';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('noto-serif-bengali-normal-v2.003.woff2') format('woff2'),
+    url('noto-serif-bengali-normal-v2.003.ttf') format('truetype');
 }
