@@ -4,7 +4,7 @@ title = "Ekushey Lohit"
 
 # Ekushey Lohit
 
-Ekushey Lohit is a Bengali font with glyphs derived from Lohit Bengali, originally designed by Automatic Control Equipments. The Unicode conversion was performed by Ekushey, and the font is distributed under the SIL Open Font License, Version 1.0. Font Source: [Free Bangla Font Project](http://www.nongnu.org/freebangfont/)
+[Ekushey Lohit](https://ekushey.org/font/ekushey-lohit/) is a Bengali font with glyphs derived from [Lohit Bengali](https://github.com/pravins/lohit/tree/master/bengali), originally designed by Automatic Control Equipments. The Unicode conversion was performed by Ekushey.
 
 ## Preview
 
@@ -48,4 +48,4 @@ body {
 - Multiple web font formats supported
 
 ## License
-This font is distributed under the SIL Open Font License, Version 1.0, making it free for use.
+This font is distributed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.0, making it free for use.
