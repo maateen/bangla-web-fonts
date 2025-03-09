@@ -1,4 +1,5 @@
 .DS_Store
+.idea
 docs/content
 docs/public
 docs/resources
