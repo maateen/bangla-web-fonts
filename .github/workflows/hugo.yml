@@ -8,11 +8,10 @@ on:
   pull_request:
     branches: ["main"]
     types: [opened, synchronize, reopened]
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
 env:
-  HUGO_VERSION: 0.140.2
+  HUGO_VERSION: 0.142.0
+  FONT_TOOLS_VERSION: 4.56.0
   # For maximum backward compatibility with Hugo modules
   HUGO_ENV: production
   HUGO_ENVIRONMENT: production
@@ -34,83 +33,37 @@ defaults:
     shell: bash
 
 jobs:
-  # Test job for Pull Requests
-  test:
-    if: github.event_name == 'pull_request'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
-      - name: Setup Hugo
-        run: |
-          hugo version
-
-      - name: Copy fonts in docs/content folder
-        run: |
-          mv fonts docs/content
-
-      - name: Build with Hugo
-        working-directory: docs
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "/"
-
-      - name: Check build output
-        run: |
-          if [ -d "docs/public" ]; then
-            echo "✅ Build successful"
-            echo "Generated files:"
-            ls -la docs/public/
-          else
-            echo "❌ Build failed - 'docs/public' directory not found"
-            exit 1
-          fi
-
-      - name: Check for broken links
-        run: |
-          if find docs/public -name "*.html" -exec grep -l "404.html" {} \;; then
-            echo "⚠️ Warning: Some files contain broken links"
-          else
-            echo "✅ No broken links found"
-          fi
-
-      - name: Upload test artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-build
-          path: docs/public/
-          retention-days: 5
-
   # Build job
   build:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      - name: Install Hugo CLI & dependencies
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb \
+          && pip install "fonttools[woff]"==${FONT_TOOLS_VERSION}
+
+      - name: Verify Hugo CLI & dependencies
+        run: |
+          echo "hugo version: $(hugo version)"
+          echo "ttx version: $(ttx --version)"
+          echo "brotli version: $(brotli --version)"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Generate woff2 fonts
+        run: |
+          find ./fonts -name "*.ttf" -type f -exec ttx -fai "{}" \;
+          find ./fonts -name "*.ttx" -type f -exec ttx -fb --no-recalc-timestamp --flavor woff2 "{}" \;
+          find ./fonts -name "*.ttx" -type f -delete
 
       - name: Copy fonts in docs/content folder
         run: |
@@ -124,7 +77,18 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Upload artifact
+      - name: Check build output
+        run: |
+          if [ -d "docs/public" ]; then
+            echo "✅ Build successful"
+            echo "Generated files:"
+            ls -la docs/public/
+          else
+            echo "❌ Build failed - 'docs/public' directory not found"
+            exit 1
+          fi
+
+      - name: Upload build artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
@@ -132,7 +96,7 @@ jobs:
 
   # Deployment job
   deploy:
-    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'push'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
