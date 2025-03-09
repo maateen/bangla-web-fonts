@@ -1,14 +1,14 @@
 +++
-title = "Solaiman Lipi"
+title = "SolaimanLipi"
 +++
 
-# Solaiman Lipi
+# SolaimanLipi
 
-Solaiman Lipi is a Unicode-compliant Bangla font designed by Solaiman Karim in 2003. It was developed as part of the Ekushey project and is redistributed by Altruists International. The font supports complete Bengali Unicode range (U+0980-U+09FF) and is available under the SIL Open Font License Version 1.0. Font Source: [http://ekushey.org/](http://ekushey.org/)
+[SolaimanLipi](https://ekushey.org/font/solaimanlipi/) is a Unicode-compliant Bangla font designed by [Solaiman Karim](https://ekushey.org/designer/solaiman-karim/) in 2003. It was developed as part of the [Ekushey project](https://ekushey.org/) and is redistributed by Altruists International. The font supports complete Bengali Unicode range (U+0980-U+09FF).
 
 ## Preview
 
-{{< font-preview "Solaiman Lipi" >}}
+{{< font-preview "SolaimanLipi" >}}
 
 ## Embed Font
 
@@ -31,14 +31,14 @@ To use this font into a website, embed this code in the `<head>` of your HTML do
 Use the following CSS rule to specify this font-family:
 
 ```css
-font-family: 'Solaiman Lipi', sans-serif;
+font-family: 'SolaimanLipi', sans-serif;
 ```
 
 #### Example
 
 ```css
 body {
-    font-family: 'Solaiman Lipi', sans-serif;
+    font-family: 'SolaimanLipi', sans-serif;
 }
 ```
 
@@ -49,4 +49,4 @@ body {
 - Includes web-safe fallback options
 
 ## License
-This font is licensed under the SIL Open Font License Version 1.0. Free for personal use, with proper licensing required for commercial applications.
+This font is licensed under the [SIL Open Font License](https://openfontlicense.org/) Version 1.0. Free for personal use, with proper licensing required for commercial applications.
