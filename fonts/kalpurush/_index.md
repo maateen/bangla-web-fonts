@@ -4,7 +4,7 @@ title = "Kalpurush"
 
 # Kalpurush
 
-Kalpurush is a Bengali font designed by Md. Tanbin Islam Siyam as part of the Avro Free Bangla Font Project. It is available through OmicronLab and aims to provide robust support for Bengali text rendering. Source: [OmicronLab](http://www.omicronlab.com/)
+Kalpurush is a serif styled free Bengali unicode font designed by [Md. Tanbin Islam Siyam](https://github.com/potasiyam) as part of the [Avro Free Bangla Font Project](http://www.omicronlab.com/). It is available through OmicronLab and aims to provide robust support for Bengali text rendering.
 
 ## Preview
 
@@ -31,14 +31,14 @@ To use this font on a website, embed this code in the `<head>` of your HTML docu
 Use the following CSS rule to specify this font-family:
 
 ```css
-font-family: 'Kalpurush', sans-serif;
+font-family: 'Kalpurush', serif;
 ```
 
 #### Example
 
 ```css
 body {
-    font-family: 'Kalpurush', sans-serif;
+    font-family: 'Kalpurush', serif;
 }
 ```
 
@@ -48,4 +48,4 @@ body {
 - Multiple web font formats supported
 
 ## License
-This font is part of the Avro Free Bangla Font Project and is available for free use.
+This Font Software is licensed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.0. No modification of the license is permitted, only verbatim copy is allowed.
