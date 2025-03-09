@@ -52,4 +52,4 @@ body {
 - Optimized for screen display
 
 ## License
-Licensed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.1. This font is free to use, modify, and redistribute under the terms of the license.
+Licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.1. This font is free to use, modify, and redistribute under the terms of the license.

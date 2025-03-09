@@ -54,4 +54,4 @@ body {
 - Consistent cross-platform rendering
 
 ## License
-Licensed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.1. Free for both personal and commercial use. Full license details available at [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Serif+Bengali/about).
+Licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.1. Free for both personal and commercial use. Full license details available at [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Serif+Bengali/about).

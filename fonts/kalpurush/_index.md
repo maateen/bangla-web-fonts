@@ -48,4 +48,4 @@ body {
 - Multiple web font formats supported
 
 ## License
-This Font Software is licensed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.0. No modification of the license is permitted, only verbatim copy is allowed.
+This Font Software is licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.0. No modification of the license is permitted, only verbatim copy is allowed.

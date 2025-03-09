@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Tiro Bangla';
+  font-display: swap;
+  font-style: italic;
+  font-weight: normal;
+  src: url('tiro-bangla-italic-v1.60.woff2') format('woff2'),
+    url('tiro-bangla-italic-v1.60.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Tiro Bangla';
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  src: url('tiro-bangla-regular-v1.60.woff2') format('woff2'),
+    url('tiro-bangla-regular-v1.60.ttf') format('truetype');
+}
