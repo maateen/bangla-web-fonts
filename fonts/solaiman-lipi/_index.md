@@ -43,10 +43,10 @@ body {
 ```
 
 ## Features
-- Multiple web font formats supported (WOFF2, WOFF)
+- Multiple web font formats supported (WOFF2)
 - Optimized for web use
 - Unicode-compliant for proper web rendering
 - Includes web-safe fallback options
 
 ## License
-This font is licensed under the [SIL Open Font License](https://openfontlicense.org/) Version 1.0. Free for personal use, with proper licensing required for commercial applications.
+This font is licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/) Version 1.0. Free for personal use, with proper licensing required for commercial applications.

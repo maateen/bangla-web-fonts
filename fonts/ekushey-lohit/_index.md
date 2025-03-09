@@ -48,4 +48,4 @@ body {
 - Multiple web font formats supported
 
 ## License
-This font is distributed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.0, making it free for use.
+This font is distributed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.0, making it free for use.
