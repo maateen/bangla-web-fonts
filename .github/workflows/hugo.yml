@@ -10,7 +10,7 @@ on:
     types: [opened, synchronize, reopened]
 
 env:
-  HUGO_VERSION: 0.142.0
+  HUGO_VERSION: 0.148.2
   FONT_TOOLS_VERSION: 4.56.0
   # For maximum backward compatibility with Hugo modules
   HUGO_ENV: production
@@ -61,21 +61,27 @@ jobs:
 
       - name: Generate woff2 fonts
         run: |
+          echo "🔧 Converting TTF fonts to WOFF2..."
           find ./fonts -name "*.ttf" -type f -exec ttx -fai "{}" \;
           find ./fonts -name "*.ttx" -type f -exec ttx -fb --no-recalc-timestamp --flavor woff2 "{}" \;
           find ./fonts -name "*.ttx" -type f -delete
+          echo "✅ Font conversion completed"
 
-      - name: Copy fonts in docs/content folder
+      - name: Copy fonts to docs/content folder
         run: |
+          echo "📁 Moving fonts to docs/content..."
           mv fonts docs/content
+          echo "✅ Fonts moved successfully"
 
       - name: Build with Hugo
         working-directory: docs
         run: |
+          echo "🏗️ Building Hugo site..."
           hugo \
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          echo "✅ Hugo build completed"
 
       - name: Check build output
         run: |
@@ -89,7 +95,6 @@ jobs:
           fi
 
       - name: Upload build artifact
-        id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./docs/public
