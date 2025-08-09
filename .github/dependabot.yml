@@ -3,8 +3,6 @@ updates:
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     target-branch: "main" # Create PRs against a specific branch
-    reviewers:
-      - maateen
     schedule:
       interval: "weekly" # You can choose daily, weekly, or monthly
       day: "friday" # Specific day for weekly updates
