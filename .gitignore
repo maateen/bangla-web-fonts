@@ -12,3 +12,9 @@ themes/hugo-book
 *.ttx
 *.woff
 *.woff2
+
+# Ignore backup files
+*.bak
+
+# Ignore fonts/fonts symlink
+fonts/fonts

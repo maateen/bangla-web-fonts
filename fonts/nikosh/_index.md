@@ -43,7 +43,16 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** Nikosh
+- **Subfamily:** Regular
+- **Version:** 001.000
+- **Release Date:** May 24, 2012
+- **Designer:** Jowad Kazi, Omi Azad, Mozammel Sarker
+
 ## Features
+
 - Traditional Bengali typography
 - High readability at various sizes
 - Well-balanced character proportions
@@ -52,4 +61,5 @@ body {
 - Optimized for both print and screen
 
 ## License
-Please verify licensing requirements before commercial use. Commonly used in government and educational institutions in Bangladesh.
+
+**Nikosh** is a font developed by the **Election Commission of Bangladesh** that incorporates Latin glyphs from a modified version of the **DejaVu Serif** font from the DejaVu font project. The font software is released under the [Creative Common License, v3](http://creativecommons.org/licenses/by-nc-nd/3.0), which allows users to share and use the font under specific terms including attribution, non-commercial use, and no derivatives.

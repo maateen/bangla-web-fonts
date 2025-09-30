@@ -17,20 +17,26 @@ Maksudur Rahman Maateen is a DevOps/Platform Engineer specializing in Cloud Infr
 ## License
 
 ### Font Licenses
+
 Each font distributed through this CDN comes with its own individual license. Users must comply with the specific license terms of each font they use. Please refer to the individual font pages for their respective license details.
 
 ### Website Content
+
 The content of this website is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). This means you are free to:
+
 - Copy, modify, distribute, and perform the work
 - Even for commercial purposes
 - All without asking permission
 
 ### Content Generation
+
 - Part of this website's content was generated with the assistance of AI technology
 - The generated content has been reviewed and edited for accuracy and completeness
 
 ### Technical Implementation
+
 This website is:
+
 - Generated using [Hugo](https://gohugo.io/)
 - Built with the [hugo-book theme](https://github.com/alex-shpak/hugo-book) by Alex Shpak
 - Theme usage is subject to its original license terms

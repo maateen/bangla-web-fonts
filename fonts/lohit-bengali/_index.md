@@ -43,7 +43,16 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** Lohit Bengali
+- **Subfamily:** Regular
+- **Version:** 2.5.3
+- **Release Date:** July 31, 2013
+- **Designer:** Lohit Fonts Project contributors
+
 ## Features
+
 - Unicode-compliant Bengali font
 - Professional design for high readability
 - Comprehensive character support
@@ -52,4 +61,5 @@ body {
 - Optimized for screen display
 
 ## License
-Licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.1. This font is free to use, modify, and redistribute under the terms of the license.
+
+The Lohit Fonts Project, with contributions made between 2011 and 2012, is licensed under the **SIL Open Font License 1.1**. This license is a free, open-source license specifically designed for fonts and related software. It allows the fonts to be used, studied, modified, and redistributed freely, provided that derivative works are not sold by themselves and that any modified versions use a different name (unless explicit permission is granted). The license ensures that the fonts remain free and open for the community while protecting the original font names and allowing for collaborative improvement.

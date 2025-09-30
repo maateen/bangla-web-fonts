@@ -42,11 +42,22 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** SolaimanLipi
+- **Subfamily:** Regular
+- **Version:** 2.002
+- **Release Date:** February 19, 2021
+- **Designer:** [Solaiman Karim](mailto:solaiman@ekushey.org)
+- **Developer:** Al Mamun Hossen
+
 ## Features
+
 - Multiple web font formats supported (WOFF2)
 - Optimized for web use
 - Unicode-compliant for proper web rendering
 - Includes web-safe fallback options
 
 ## License
-This font is licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/) Version 1.0. Free for personal use, with proper licensing required for commercial applications.
+
+This Font Software is licensed under the [SIL Open Font License](https://openfontlicense.org/), Version 1.1.

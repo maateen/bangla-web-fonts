@@ -42,10 +42,20 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** Ekushey Lohit
+- **Subfamily:** Normal
+- **Version:** 2.0.1
+
 ## Features
+
 - Comprehensive Bengali character support
 - Optimized for web and digital use
 - Multiple web font formats supported
 
 ## License
-This font is distributed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.0, making it free for use.
+
+Glyphs are taken from "Lohit Bengali" made by Automatic Control Equipments, Pune, INDIA. Font adapted to UNICODE by the contributors of [Ekushey](www.ekushey.org) and TrueType hintings have been added by [Alamigr Mohammed](mailto:alamgir99@gmail.com) and [Ershadul Haq](mailto:ershad@gmail.com).
+
+This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
