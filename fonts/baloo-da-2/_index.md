@@ -43,7 +43,15 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** Baloo Da 2
+- **Subfamily:** Regular
+- **Version:** 1.700
+- **Designer:** Noopur Datye, Sulekha Rajkumar and Ek Type
+
 ## Features
+
 - Modern geometric design
 - Multiple font weights available
 - Optimized for screen display
@@ -52,4 +60,5 @@ body {
 - Multiple web font formats supported
 
 ## License
-Licensed under the Open Font License (OFL v1.1). For more details, visit [Google Fonts](https://fonts.google.com/specimen/Baloo+Da+2/about).
+
+This font software is licensed under the **[SIL Open Font License](https://openfontlicense.org/)**, Version 1.1, which is a free and open-source license specifically designed for fonts and related software that allows for redistribution, modification, and use in both commercial and non-commercial projects while maintaining certain requirements for attribution and licensing consistency.

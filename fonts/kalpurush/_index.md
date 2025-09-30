@@ -42,10 +42,20 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** Kalpurush UNICODE
+- **Subfamily:** Regular
+- **Version:** 0.258 (post-5.2.0)
+- **Release Date:** September 1, 2014
+- **Designer:** [Md. Tanbin Islam Siyam](mailto:tanbin@live.com)
+
 ## Features
+
 - Comprehensive Bengali character support
 - Optimized for web and digital use
 - Multiple web font formats supported
 
 ## License
-This Font Software is licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.0. No modification of the license is permitted, only verbatim copy is allowed.
+
+This font software is distributed under the **SIL Open Font License, Version 1.0**, which can be found at [openfontlicense.org](https://openfontlicense.org/). The license terms are strict in that they must be used exactly as written—no modifications to the license text are permitted, and only verbatim (word-for-word) copies of the license are allowed when redistributing the font software.

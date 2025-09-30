@@ -43,7 +43,16 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** Mukti
+- **Subfamily:** Regular
+- **Version:** 3.4.3
+- **Release Date:** December 5, 2022
+- **Designer:** [Dr Anirban Mitra](mailto:mitra@erabangla.net)
+
 ## Features
+
 - Clean and professional design
 - Excellent screen readability
 - Complete Unicode Bengali support
@@ -52,4 +61,5 @@ body {
 - Cross-platform compatibility
 
 ## License
-Released under the [GNU General Public License](https://github.com/mitradranirban/fonts-mukti/blob/master/LICENCE) as part of the Free Bangla Font Project. Free for both personal and commercial use.
+
+The **Mukta Bangla Font Project** (© Dr Anirban Mitra 2002-2022) is licensed under **GNU GPL3+** as free software, with full license details available at www.gnu.org/licences/gpl.txt. A special exception permits embedding the font or unaltered portions into documents without automatically subjecting those documents to the GPL, though other GPL triggers may still apply. If the font is modified, developers may choose to extend this embedding exception to their modified version but are not required to do so—removing the exception statement is permitted if they prefer not to extend it.

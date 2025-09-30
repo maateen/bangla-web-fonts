@@ -43,7 +43,16 @@ body {
 }
 ```
 
+## Font Information
+
+- **Font Name:** Noto Serif Bengali
+- **Subfamily:** Regular
+- **Version:** 2.003 (Phase 3)
+- **Release Date:** November 17, 2022
+- **Designer:** Monotype Design Team
+
 ## Features
+
 - Professional serif design
 - Multiple font weights available
 - Extensive Unicode support
@@ -54,4 +63,5 @@ body {
 - Consistent cross-platform rendering
 
 ## License
-Licensed under the [SIL Open Font License](https://openfontlicense.org/open-font-license-official-text/), Version 1.1. Free for both personal and commercial use. Full license details available at [Google Fonts](https://fonts.google.com/noto/specimen/Noto+Serif+Bengali/about).
+
+This font software is licensed under the **[SIL Open Font License](https://openfontlicense.org/)**, Version 1.1, which is a free and open-source license specifically designed for fonts and related software that allows for redistribution, modification, and use in both commercial and non-commercial projects while maintaining certain requirements for attribution and licensing consistency.

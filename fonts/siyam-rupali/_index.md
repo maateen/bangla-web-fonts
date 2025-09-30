@@ -42,11 +42,23 @@ body {
 }
 ```
 
+## Font Information
+
+- **Family Name:** Siyam Rupali
+- **Subfamily:** Regular
+- **Version:** 1.070
+- **Altered & Hinted:** [Md. Tanbin Islam Siyam](potasiyam.wordpress.com)
+- **Font Programming:** [M. M. Rifat-Un-Nabi](www.vistaarc.com)
+
 ## Features
+
 - Unicode-compliant Bengali font support
 - Optimized for web display
 - Multiple web font formats supported
 - Includes web-safe fallback options
 
 ## License
-This font is distributed under the [GNU GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.html). You can freely redistribute and modify it under the terms of the license.
+
+Developed under Avro Font Development Project. Latin typefaces are taken from Droid Sans. Droid fonts are licensed under the [Apache License](http://www.apache.org/licenses/LICENSE-2.0), Version 2.0.
+
+This font is distributed as free software under the [GNU General Public License](http://www.gnu.org/licenses/gpl.txt) (version 2 or later), allowing redistribution and modification but without any warranty of merchantability or fitness for purpose. A special exception permits embedding the font (or unaltered portions) in documents without causing those documents to fall under the GPL, though this exception doesn't override other reasons a document might be GPL-covered. If you modify the font, you may choose to extend or remove this embedding exception from your modified version.
