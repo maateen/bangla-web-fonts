@@ -12,20 +12,20 @@ name: Hugo site CI/CD
 env:
   HUGO_VERSION: 0.150.1
   FONT_TOOLS_VERSION: 4.56.0
-  # For maximum backward compatibility with Hugo modules
-  HUGO_ENV: production
-  HUGO_ENVIRONMENT: production
+  CLOUDFLARE_CUSTOM_DOMAIN: ${{ vars.CLOUDFLARE_CUSTOM_DOMAIN }}
+  CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Sets permissions for Cloudflare Pages deployment and PR comments
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  deployments: write
+  issues: write
+  pull-requests: write
 
 # Allow only one concurrent deployment
 concurrency:
-  group: "pages"
   cancel-in-progress: true
+  group: "pages"
 
 # Default to bash
 defaults:
@@ -33,14 +33,11 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job
-  build:
+  # Deploy job
+  deploy:
+    if: github.event_name == 'push' || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Install Hugo CLI & dependencies
         run: |
           HUGO_URL="https://github.com/gohugoio/hugo/releases/download"
@@ -58,8 +55,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
-          submodules: recursive
           fetch-depth: 0
+          submodules: recursive
 
       - name: Generate woff2 fonts
         run: |
@@ -75,15 +72,30 @@ jobs:
           mv fonts docs/content
           echo "✅ Fonts moved successfully"
 
-      - name: Build with Hugo
-        working-directory: docs
+      - name: Build with Hugo (Production)
+        if: github.event_name == 'push'
         run: |
-          echo "🏗️ Building Hugo site..."
+          echo "🏗️ Building Hugo site for production..."
+          cd docs
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-          echo "✅ Hugo build completed"
+            --enableGitInfo \
+            --environment Production \
+            --baseURL "https://${CLOUDFLARE_CUSTOM_DOMAIN}/"
+          echo "✅ Hugo production build completed"
+
+      - name: Build with Hugo (Preview)
+        if: github.event_name == 'pull_request'
+        run: |
+          echo "🏗️ Building Hugo site for preview..."
+          cd docs
+          hugo \
+            --gc \
+            --minify \
+            --enableGitInfo \
+            --environment Preview
+          echo "✅ Hugo preview build completed"
 
       - name: Check build output
         run: |
@@ -96,20 +108,73 @@ jobs:
             exit 1
           fi
 
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v4
+      - name: Deploy to Cloudflare Pages (Production)
+        if: github.event_name == 'push'
+        id: deploy-prod
+        uses: cloudflare/wrangler-action@v3
         with:
-          path: ./docs/public
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: >
+            pages deploy docs/public
+            --commit-dirty=true
+            --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
 
-  # Deployment job
-  deploy:
-    if: github.event_name == 'push'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy to Cloudflare Pages (Preview)
+        if: github.event_name == 'pull_request'
+        id: deploy-preview
+        uses: cloudflare/wrangler-action@v3
+        with:
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: >
+            pages deploy docs/public
+            --commit-dirty=true
+            --project-name=${{ env.CLOUDFLARE_PROJECT_NAME }}
+
+      - name: Comment PR with preview link
+        if: github.event_name == 'pull_request'
+        env:
+          CLOUDFLARE_DEPLOYMENT_URL: ${{ steps.deploy-preview.outputs.deployment-url }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const projectName = "${{ env.CLOUDFLARE_PROJECT_NAME }}";
+            const previewUrl = "${{ env.CLOUDFLARE_DEPLOYMENT_URL }}";
+
+            const comment = `## 🔍 Preview Deployment
+
+            Your changes have been deployed to a preview environment:
+
+            **Preview URL:** ${previewUrl}
+
+            This preview will be updated automatically when you push new commits to this PR.
+            `;
+
+            // Check if preview comment already exists
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+
+            const existingComment = comments.find(comment =>
+              comment.body.includes('🔍 Preview Deployment')
+            );
+
+            if (existingComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existingComment.id,
+                body: comment
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body: comment
+              });
+            }

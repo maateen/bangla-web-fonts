@@ -53,8 +53,8 @@ body {
 - **Version:** 1.52
 - **Release Date:** 2020
 - **Designer:**
-    - **Bangla:** John Hudson & Fiona Ross, assisted by Neelakash Kshetrimayum
-    - **Latin:** John Hudson with Paul Hanslow, assisted by Kaja Słojewska
+  - **Bangla:** John Hudson & Fiona Ross, assisted by Neelakash Kshetrimayum
+  - **Latin:** John Hudson with Paul Hanslow, assisted by Kaja Słojewska
 
 ## Features
 
@@ -65,4 +65,4 @@ body {
 
 ## License
 
-This font software is **Copyright © 2020 by The Indigo Project Authors** (https://github.com/TiroTypeworks/Indigo) and is licensed under the **[SIL Open Font License](https://openfontlicense.org/)**, Version 1.1. This is a free and open-source license specifically designed for fonts and related software that permits redistribution, modification, and use in both commercial and non-commercial projects. The license allows you to freely use, study, share, and modify the font while maintaining certain requirements for attribution and licensing consistency. Modified versions must be released under the same license and cannot use the reserved font name without permission, and the font cannot be sold by itself. This license promotes collaboration and ensures derivative works remain freely available to the community.
+This font software is **Copyright © 2020 by The Indigo Project Authors** (<https://github.com/TiroTypeworks/Indigo>) and is licensed under the **[SIL Open Font License](https://openfontlicense.org/)**, Version 1.1. This is a free and open-source license specifically designed for fonts and related software that permits redistribution, modification, and use in both commercial and non-commercial projects. The license allows you to freely use, study, share, and modify the font while maintaining certain requirements for attribution and licensing consistency. Modified versions must be released under the same license and cannot use the reserved font name without permission, and the font cannot be sold by itself. This license promotes collaboration and ensures derivative works remain freely available to the community.
