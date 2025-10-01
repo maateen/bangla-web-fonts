@@ -8,4 +8,3 @@ updates:
       day: "friday" # Specific day for weekly updates
       time: "10:00" # Specific time (in UTC)
       timezone: "Europe/Berlin" # Specific timezone
-    versioning-strategy: increase-if-necessary # Only update to tagged versions

@@ -21,6 +21,20 @@ Our fonts are served through Cloudflare's global network, providing:
 ![GitHub forks](https://img.shields.io/github/forks/maateen/bangla-web-fonts)
 ![GitHub Repo stars](https://img.shields.io/github/stars/maateen/bangla-web-fonts)
 
+## Community
+
+We welcome contributions from the Bengali typography community! Our project includes:
+
+- 📋 **[Code of Conduct](https://github.com/maateen/bangla-web-fonts/blob/main/CODE_OF_CONDUCT.md)** - Community guidelines for respectful participation
+- 🤝 **[Contributing Guidelines](https://github.com/maateen/bangla-web-fonts/blob/main/CONTRIBUTING.md)** - Complete contributor ladder from Contributor to Maintainer
+- 👥 **[Contributors Registry](https://github.com/maateen/bangla-web-fonts/blob/main/CONTRIBUTORS.md)** - Recognition for community members
+- 🔤 **Font Requests** - [Request new fonts](https://github.com/maateen/bangla-web-fonts/issues/new?template=font-request.md) for the CDN
+- 🐛 **Font Bug Reports** - [Report font issues](https://github.com/maateen/bangla-web-fonts/issues/new?template=font-bug-report.md) for quick resolution
+- 🌐 **Website Bug Reports** - [Report website issues](https://github.com/maateen/bangla-web-fonts/issues/new?template=website-bug-report.md) on fonts.maateen.me
+- 💬 **[Discussions](https://github.com/maateen/bangla-web-fonts/discussions)** - Community support and general questions
+
+All contributions are automatically acknowledged through our welcome system and can be formally recognized in our contributors registry.
+
 ## Maintainer
 
 Maksudur Rahman Maateen is a DevOps/Platform Engineer with expertise in Cloud Infrastructure Architecture and Site Reliability Engineering. As an open-source advocate, he champions Ubuntu and Python programming within the Bangladeshi tech community. Beyond maintaining the Bengali Font CDN project, he focuses on advancing cloud infrastructure solutions while exploring his passions for literature, culinary arts, and philosophical inquiry. Learn more about his work at [maateen.me](https://maateen.me/).

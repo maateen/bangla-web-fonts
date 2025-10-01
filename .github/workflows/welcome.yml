@@ -1,0 +1,113 @@
+name: Welcome New Contributors
+
+'on':
+  issues:
+    types: [opened]
+  pull_request_target:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Welcome new contributors
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { context } = require('@actions/github');
+            const { owner, repo } = context.repo;
+
+            // Check if this is the user's first contribution
+            const isFirstContribution = async () => {
+              try {
+                const { data: issues } = await github.rest.search.issuesAndPullRequests({
+                  q: `repo:${owner}/${repo} author:${context.payload.sender.login} is:closed`,
+                  per_page: 1
+                });
+
+                const { data: prs } = await github.rest.search.issuesAndPullRequests({
+                  q: `repo:${owner}/${repo} author:${context.payload.sender.login} type:pr is:closed`,
+                  per_page: 1
+                });
+
+                return issues.total_count === 0 && prs.total_count === 0;
+              } catch (error) {
+                console.log('Error checking contribution history:', error);
+                return true; // Assume first contribution if we can't check
+              }
+            };
+
+            const isFirst = await isFirstContribution();
+
+            if (isFirst) {
+              let welcomeMessage = '';
+
+              if (context.eventName === 'issues') {
+                welcomeMessage = `## Welcome to Bangla Web Fonts CDN! 👋
+
+            Thank you for opening your first issue, @${context.payload.sender.login}! 🎉
+
+            ### Before we proceed:
+            - 📋 Please make sure you've filled out all sections of the issue template
+            - 🔍 Check our [existing issues](https://github.com/${owner}/${repo}/issues) to avoid duplicates
+            - 📖 Review our [Code of Conduct](https://github.com/${owner}/${repo}/blob/main/CODE_OF_CONDUCT.md)
+            - 🤝 Read our [Contributor Guidelines](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md)
+
+            ### What happens next?
+            - A maintainer will review your issue within 48 hours
+            - You may be asked for additional information or clarification
+            - If you're requesting a new font, we'll verify licensing and quality standards
+
+            ### Get involved:
+            - 💬 Join our [Discussions](https://github.com/${owner}/${repo}/discussions) for general questions
+            - 🌟 Star the repository if you find it useful
+            - 📢 Share the CDN with other Bengali web developers
+
+            Thank you for helping improve Bengali typography on the web! 🇧🇩✨`;
+              } else if (context.eventName === 'pull_request_target') {
+                welcomeMessage = `## Welcome new contributor! 👋
+
+            Thank you for your first pull request, @${context.payload.sender.login}! 🎉
+
+            ### Review Process:
+            - 🔍 A maintainer will review your PR within 2-3 business days
+            - ✅ Please ensure all checkboxes in the PR template are completed
+            - 🧪 Your changes will be tested for compatibility and performance
+            - 📝 You may receive feedback requesting changes or improvements
+
+            ### Important Guidelines:
+            - 📖 Make sure you've read our
+              [Code of Conduct](https://github.com/${owner}/${repo}/blob/main/CODE_OF_CONDUCT.md)
+            - 🤝 Review our
+              [Contributor Guidelines](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md)
+            - 🔤 If adding fonts, verify all licensing requirements are met
+            - 📱 Test your changes across different browsers and devices
+
+            ### While you wait:
+            - 💬 Join [Discussions](https://github.com/${owner}/${repo}/discussions) to connect with the community
+            - 📖 Check out our [documentation](https://fonts.maateen.me/)
+            - 🌟 Consider starring the repository
+
+            We appreciate your contribution to making Bengali fonts more accessible on the web! 🇧🇩✨`;
+              }
+
+              if (context.eventName === 'issues') {
+                await github.rest.issues.createComment({
+                  owner,
+                  repo,
+                  issue_number: context.payload.issue.number,
+                  body: welcomeMessage
+                });
+              } else if (context.eventName === 'pull_request_target') {
+                await github.rest.issues.createComment({
+                  owner,
+                  repo,
+                  issue_number: context.payload.pull_request.number,
+                  body: welcomeMessage
+                });
+              }
+            }
