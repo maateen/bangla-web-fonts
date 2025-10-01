@@ -36,26 +36,11 @@ params:
   # You can also set value to "*" to render all sections to menu
   BookSection: '*'
 
-  # Set source repository location.
-  # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo: https://github.com/maateen/bangla-web-fonts
-
-  # Specifies commit portion of the link to the page's last modified commit hash for 'doc' page
-  # type.
-  # Required if 'BookRepo' param is set.
-  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
-  # Github uses 'commit', Bitbucket uses 'commits'
-  BookCommitPath: commit
-
-  # Enable 'Edit this page' links for 'doc' page type.
-  # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
-  # Path must point to the site directory.
-  BookEditPath: edit/master/bangla-web-fonts
-
-  # (Optional, default January 2, 2006) Configure the date format used on the pages
+  # (Optional, default 'January 2, 2006') Configure the date format used on the pages
   # - In git information
   # - In blog posts
-  BookDateFormat: '2 January, 2006'
+  # https://gohugo.io/functions/time/format/
+  BookDateFormat: 'January 2, 2006'
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
