@@ -1,0 +1,16 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 General Discussion
+    url: https://github.com/maateen/bangla-web-fonts/discussions
+    about: Ask questions, share ideas, or discuss the project with the community
+  - name: 🔍 Search Existing Issues
+    url: https://github.com/maateen/bangla-web-fonts/issues?q=is%3Aissue
+    about: Search existing issues before creating a new one
+  - name: 🔤 Request New Font
+    url: >-
+      https://github.com/maateen/bangla-web-fonts/issues/new?assignees=maateen&labels=enhancement%2Cfont-request&template=font-request.md&title=%5BFONT+REQUEST%5D+
+    about: Request a new Bengali font to be added to the CDN
+  - name: 🌐 Website Bug Report
+    url: >-
+      https://github.com/maateen/bangla-web-fonts/issues/new?assignees=maateen&labels=bug%2Cwebsite&template=website-bug-report.md&title=%5BWEBSITE+BUG%5D+
+    about: Report issues with the fonts.maateen.me website functionality
