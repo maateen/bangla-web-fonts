@@ -7,16 +7,11 @@ menuTitle = "Home"
 
 This project aims to enhance the web by providing beautiful, fast, and accessible Bengali typography through **Cloudflare's Global CDN**. The fonts listed on the left are currently supported, with more to be added soon.
 
-## Why Cloudflare CDN?
-
 Our fonts are served through Cloudflare's global network, providing:
 
 - ⚡ **Lightning-fast delivery** from 300+ global edge locations
-- 🛡️ **Built-in security** with DDoS protection and web application firewall
-- 📈 **99.99% uptime** with enterprise-grade reliability
 - 🌍 **Global reach** ensuring fast font loading worldwide
-- 📱 **Mobile optimization** with automatic format selection
-- 🔄 **Smart caching** reducing server load and improving performance
+- 🔄 **Smart caching** reducing font loading times and bandwidth usage
 
 ![License](https://img.shields.io/badge/content-CC0%201.0-green)
 ![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-ff4088)
@@ -28,7 +23,7 @@ Our fonts are served through Cloudflare's global network, providing:
 
 ## Maintainer
 
-Maksudur Rahman Maateen is a DevOps/Platform Engineer specializing in Cloud Infrastructure Architecture and Site Reliability Engineering. An advocate for open-source technologies, he actively promotes Ubuntu and Python programming in Bangladesh. While maintaining this Bengali Font CDN project, he continues his professional work in cloud infrastructure while pursuing interests in reading, cooking, and philosophical observations. Visit [maateen.me](https://maateen.me/) to learn more about his work.
+Maksudur Rahman Maateen is a DevOps/Platform Engineer with expertise in Cloud Infrastructure Architecture and Site Reliability Engineering. As an open-source advocate, he champions Ubuntu and Python programming within the Bangladeshi tech community. Beyond maintaining the Bengali Font CDN project, he focuses on advancing cloud infrastructure solutions while exploring his passions for literature, culinary arts, and philosophical inquiry. Learn more about his work at [maateen.me](https://maateen.me/).
 
 ## License
 
@@ -44,10 +39,7 @@ The content of this website is licensed under [CC0 1.0 Universal](https://creati
 - Even for commercial purposes
 - All without asking permission
 
-### Content Generation
-
-- Part of this website's content was generated with the assistance of AI technology
-- The generated content has been reviewed and edited for accuracy and completeness
+Some content on this website has been generated and reformatted with AI assistance. All AI-generated content is thoroughly reviewed, verified, and edited by the maintainer for accuracy and completeness, ensuring all technical information and font metadata meets quality standards.
 
 ### Technical Implementation
 
