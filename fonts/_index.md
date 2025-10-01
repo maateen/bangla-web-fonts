@@ -5,7 +5,18 @@ menuTitle = "Home"
 
 # Bangla Web Fonts
 
-This project aims to enhance the web by providing beautiful, fast, and accessible Bengali typography through a robust **Global CDN**. The fonts listed on the left are currently supported, with more to be added soon.
+This project aims to enhance the web by providing beautiful, fast, and accessible Bengali typography through **Cloudflare's Global CDN**. The fonts listed on the left are currently supported, with more to be added soon.
+
+## Why Cloudflare CDN?
+
+Our fonts are served through Cloudflare's global network, providing:
+
+- ⚡ **Lightning-fast delivery** from 300+ global edge locations
+- 🛡️ **Built-in security** with DDoS protection and web application firewall
+- 📈 **99.99% uptime** with enterprise-grade reliability
+- 🌍 **Global reach** ensuring fast font loading worldwide
+- 📱 **Mobile optimization** with automatic format selection
+- 🔄 **Smart caching** reducing server load and improving performance
 
 ![License](https://img.shields.io/badge/content-CC0%201.0-green)
 ![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-ff4088)

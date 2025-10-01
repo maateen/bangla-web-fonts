@@ -9,14 +9,3 @@ updates:
       time: "10:00" # Specific time (in UTC)
       timezone: "Europe/Berlin" # Specific timezone
     versioning-strategy: increase-if-necessary # Only update to tagged versions
-
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    target-branch: "main"
-    schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "10:00"
-      timezone: "Europe/Berlin"
-    # Note: Dependabot will update action versions but not env vars like HUGO_VERSION
-    # Consider using renovate for more advanced dependency management
