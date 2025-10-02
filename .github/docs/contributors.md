@@ -4,7 +4,7 @@ Welcome to the Bangla Web Fonts CDN contributors registry! This document recogni
 
 ## Code of Conduct Acknowledgment
 
-By adding your name to this registry, you acknowledge that you have read and agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributor Guidelines](CONTRIBUTING.md).
+By adding your name to this registry, you acknowledge that you have read and agree to follow our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributor Guidelines](contributing.md).
 
 ## How to Join
 

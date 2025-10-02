@@ -66,6 +66,18 @@ jobs:
           find ./fonts -name "*.ttx" -type f -delete
           echo "✅ Font conversion completed"
 
+      - name: Generate fonts/_index.md from README.md
+        run: |
+          echo "📝 Generating fonts/_index.md from README.md..."
+          mkdir -p fonts
+          echo "+++" > fonts/_index.md
+          echo 'title = "Bangla Font CDN"' >> fonts/_index.md
+          echo 'menuTitle = "Home"' >> fonts/_index.md
+          echo "+++" >> fonts/_index.md
+          echo "" >> fonts/_index.md
+          tail -n +2 README.md >> fonts/_index.md
+          echo "✅ fonts/_index.md generated successfully"
+
       - name: Copy fonts to docs/content folder
         run: |
           echo "📁 Moving fonts to docs/content..."
@@ -80,7 +92,6 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --enableGitInfo \
             --environment Production \
             --baseURL "https://${CLOUDFLARE_CUSTOM_DOMAIN}/"
           echo "✅ Hugo production build completed"
@@ -93,7 +104,6 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --enableGitInfo \
             --environment Preview
           echo "✅ Hugo preview build completed"
 

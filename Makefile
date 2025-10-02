@@ -22,13 +22,26 @@ help: ## Show available commands
 	@echo "$(YELLOW)Available commands:$(RESET)"
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z_-]+:.*?## / {printf "  $(GREEN)%-15s$(RESET) %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
+.PHONY: generate-index
+generate-index: ## Generate fonts/_index.md from README.md
+	@echo "$(CYAN)📝 Generating fonts/_index.md from README.md...$(RESET)"
+	@mkdir -p $(FONTS_DIR)
+	@echo "+++" > $(FONTS_DIR)/_index.md
+	@echo 'title = "Bangla Font CDN"' >> $(FONTS_DIR)/_index.md
+	@echo 'menuTitle = "Home"' >> $(FONTS_DIR)/_index.md
+	@echo "+++" >> $(FONTS_DIR)/_index.md
+	@echo "" >> $(FONTS_DIR)/_index.md
+	@tail -n +2 README.md >> $(FONTS_DIR)/_index.md
+	@echo "$(GREEN)✅ fonts/_index.md generated successfully$(RESET)"
+
 .PHONY: serve
-serve: ## Start Hugo development server
+serve: generate-index ## Start Hugo development server with file watching
 	@echo "$(CYAN)🔗 Creating symbolic link from docs/content to fonts...$(RESET)"
 	@rm -rf $(CONTENT_FONTS_DIR)
 	@ln -sf ../../$(FONTS_DIR) $(CONTENT_FONTS_DIR)
-	@echo "$(CYAN)🚀 Starting Hugo development server...$(RESET)"
-	@cd $(DOCS_DIR) && hugo server --bind 127.0.0.1 --port 1313
+	@echo "$(CYAN)🚀 Starting Hugo development server with file watching...$(RESET)"
+	@echo "$(YELLOW)📁 Watching for changes in: $(FONTS_DIR)/, README.md, $(DOCS_DIR)/$(RESET)"
+	@cd $(DOCS_DIR) && hugo server --bind 127.0.0.1 --port 1313 --watch --poll 1s
 
 .PHONY: clean
 clean: ## Clean generated files
