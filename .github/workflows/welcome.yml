@@ -18,7 +18,6 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const { context } = require('@actions/github');
             const { owner, repo } = context.repo;
 
             // Check if this is the user's first contribution
@@ -54,8 +53,8 @@ jobs:
             ### Before we proceed:
             - 📋 Please make sure you've filled out all sections of the issue template
             - 🔍 Check our [existing issues](https://github.com/${owner}/${repo}/issues) to avoid duplicates
-            - 📖 Review our [Code of Conduct](https://github.com/${owner}/${repo}/blob/main/CODE_OF_CONDUCT.md)
-            - 🤝 Read our [Contributor Guidelines](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md)
+            - 📖 Review our [Code of Conduct](https://github.com/${owner}/${repo}/blob/main/.github/docs/CODE_OF_CONDUCT.md)
+            - 🤝 Read our [Contributor Guidelines](https://github.com/${owner}/${repo}/blob/main/.github/docs/contributing.md)
 
             ### What happens next?
             - A maintainer will review your issue within 48 hours
@@ -81,9 +80,9 @@ jobs:
 
             ### Important Guidelines:
             - 📖 Make sure you've read our
-              [Code of Conduct](https://github.com/${owner}/${repo}/blob/main/CODE_OF_CONDUCT.md)
+              [Code of Conduct](https://github.com/${owner}/${repo}/blob/main/.github/docs/CODE_OF_CONDUCT.md)
             - 🤝 Review our
-              [Contributor Guidelines](https://github.com/${owner}/${repo}/blob/main/CONTRIBUTING.md)
+              [Contributor Guidelines](https://github.com/${owner}/${repo}/blob/main/.github/docs/contributing.md)
             - 🔤 If adding fonts, verify all licensing requirements are met
             - 📱 Test your changes across different browsers and devices
 
