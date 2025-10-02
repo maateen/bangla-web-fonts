@@ -162,7 +162,7 @@ jobs:
             This preview will be updated automatically when you push new commits to this PR.
             `;
 
-            // Check if preview comment already exists
+            // Delete previous preview deployment comment if it exists
             const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -174,17 +174,17 @@ jobs:
             );
 
             if (existingComment) {
-              await github.rest.issues.updateComment({
+              await github.rest.issues.deleteComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 comment_id: existingComment.id,
-                body: comment
-              });
-            } else {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: prNumber,
-                body: comment
               });
             }
+
+            // Create new preview deployment comment
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+              body: comment
+            });
