@@ -3,12 +3,11 @@ title: Bangla Web Fonts
 theme: hugo-book
 defaultContentLanguage: en
 
-# (Optional) Set this to true if you use capital letters in file names
-disablePathToLower: true
+copyright: "[© CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)"
 
-# (Optional) Set this to true to enable 'Last Modified by' date and git author
-#  information on 'doc' type pages.
-enableGitInfo: true
+# Book configuration
+disablePathToLower: true
+enableGitInfo: false
 
 # Needed for mermaid/katex shortcodes
 markup:
@@ -19,8 +18,14 @@ markup:
     startLevel: 1
 
 menu:
-  before: []
-  after: []
+  before:
+    - name: "Home"
+      pageRef: "/"
+      weight: 1
+  after:
+    - name: "Github"
+      url: "https://github.com/maateen/bangla-web-fonts"
+      weight: 10
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.

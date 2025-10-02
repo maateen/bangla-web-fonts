@@ -18,3 +18,6 @@ themes/hugo-book
 
 # Ignore fonts/fonts symlink
 fonts/fonts
+
+# Ignore generated fonts/_index.md (generated from README.md)
+fonts/_index.md
