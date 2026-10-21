@@ -30,16 +30,24 @@ menu:
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme: auto
+  BookTheme: light
 
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
   BookToC: true
 
-  # (Optional, default docs) Specify section of content to render as menu
-  # You can also set value to "*" to render all sections to menu
-  BookSection: '*'
+  # (Optional, default false) Controlls breadcurms, if true breadcrumbs are displayed at the beginning of the document.
+  # You can also specify this parameter per page in front matter.
+  BookBreadcrumbs: true
+
+  # (Optional, default false) Enableds incoming and outgoing links display next to table of contents on a page
+  # You can also specify this parameter per page in front matter.
+  BookPageLinks: true
+
+  # (Optional, default docs) Specify root page to render child pages as menu.
+  # Page is resolved by the .GetPage function.
+  BookSection: '/'
 
   # (Optional, default 'January 2, 2006') Configure the date format used on the pages
   # - In git information
@@ -47,13 +55,13 @@ params:
   # https://gohugo.io/functions/time/format/
   BookDateFormat: 'January 2, 2006'
 
-  # (Optional, default true) Enables search function with flexsearch,
+  # (Optional, default true) Enables search function with MiniSearch.
   # Index is built on fly, therefore it might slowdown your website.
   # Configuration for indexing can be adjusted in i18n folder per language.
   BookSearch: true
 
-  # (Optional, default true) Enables comments template on pages
-  # By default partials/docs/comments.html includes Disqus template
+  # (Optional, default false) Enables comments template on pages
+  # By default layouts/_partials/docs/comments.html includes Disqus template
   # See https://gohugo.io/content-management/comments/#configure-disqus
   # Can be overwritten by same param in page frontmatter
   BookComments: true
@@ -61,10 +69,12 @@ params:
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
-  # Theme will print warning if page referenced in markdown does not exists.
-  BookPortableLinks: true
+  # Hugo Book will print warning or error if page referenced in markdown does not exists.
+  # Possible values are false | 'warning' | 'error'
+  BookPortableLinks: 'warning'
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables service worker that caches
   # visited pages and resources for offline use.
-  BookServiceWorker: true
+  # Possible values are false | true | 'precache'
+  BookServiceWorker: 'precache'
