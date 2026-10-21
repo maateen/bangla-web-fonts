@@ -1,0 +1,101 @@
+name: Update hugo-book theme
+
+'on':
+  schedule:
+    - cron: "0 10 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: "update-theme"
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      THEME_REPO: alex-shpak/hugo-book
+      THEME_PATH: docs/themes/hugo-book
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Resolve current and latest theme releases
+        id: versions
+        run: |
+          latest="$(gh api "repos/${THEME_REPO}/releases/latest" --jq '.tag_name')"
+
+          git -C "${THEME_PATH}" fetch --tags --force origin
+
+          current="$(git -C "${THEME_PATH}" describe --tags --exact-match 2>/dev/null \
+            || git -C "${THEME_PATH}" describe --tags --always)"
+
+          up_to_date=false
+          if [[ "${current}" == "${latest}" ]]; then
+            up_to_date=true
+          elif git -C "${THEME_PATH}" rev-parse --verify --quiet "refs/tags/${latest}" >/dev/null \
+            && git -C "${THEME_PATH}" merge-base --is-ancestor "${latest}" HEAD; then
+            up_to_date=true
+          fi
+
+          echo "latest=${latest}" >> "${GITHUB_OUTPUT}"
+          echo "current=${current}" >> "${GITHUB_OUTPUT}"
+
+          if [[ "${up_to_date}" == "true" ]]; then
+            echo "update=false" >> "${GITHUB_OUTPUT}"
+            echo "hugo-book is already at (or ahead of) the latest release: ${latest}" >> "${GITHUB_STEP_SUMMARY}"
+          else
+            echo "update=true" >> "${GITHUB_OUTPUT}"
+            echo "hugo-book: ${current} -> ${latest}" >> "${GITHUB_STEP_SUMMARY}"
+          fi
+
+      - name: Check out latest theme release
+        if: steps.versions.outputs.update == 'true'
+        run: |
+          git -C "${THEME_PATH}" checkout --detach "${{ steps.versions.outputs.latest }}"
+
+      - name: Open pull request
+        if: steps.versions.outputs.update == 'true'
+        env:
+          CURRENT: ${{ steps.versions.outputs.current }}
+          LATEST: ${{ steps.versions.outputs.latest }}
+        run: |
+          branch="chore/theme-${LATEST}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "${branch}"
+          git add "${THEME_PATH}"
+          git commit -m "chore(theme): bump hugo-book to ${LATEST}"
+          git push --force origin "${branch}"
+
+          if gh pr list --head "${branch}" --state open --json number --jq '.[0].number' | grep -q .; then
+            echo "Pull request for ${branch} is already open; updated it in place."
+            exit 0
+          fi
+
+          gh pr create \
+            --base main \
+            --head "${branch}" \
+            --title "chore(theme): bump hugo-book to ${LATEST}" \
+            --label "dependencies" \
+            --label "submodules" \
+            --body "$(cat <<EOF
+          Bumps the [hugo-book](https://github.com/${THEME_REPO}) theme submodule from \`${CURRENT}\` to \`${LATEST}\`.
+
+          Release notes: https://github.com/${THEME_REPO}/releases/tag/${LATEST}
+
+          Opened automatically by \`.github/workflows/update-theme.yml\`.
+          EOF
+          )"
