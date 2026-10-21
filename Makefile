@@ -4,7 +4,6 @@
 # Directories
 FONTS_DIR := fonts
 DOCS_DIR := docs
-CONTENT_FONTS_DIR := $(DOCS_DIR)/content/fonts
 
 # Colors for output
 CYAN := \033[36m
@@ -36,12 +35,9 @@ generate-index: ## Generate fonts/_index.md from README.md
 
 .PHONY: serve
 serve: generate-index ## Start Hugo development server with file watching
-	@echo "$(CYAN)🔗 Creating symbolic link from docs/content to fonts...$(RESET)"
-	@rm -rf $(CONTENT_FONTS_DIR)
-	@ln -sf ../../$(FONTS_DIR) $(CONTENT_FONTS_DIR)
 	@echo "$(CYAN)🚀 Starting Hugo development server with file watching...$(RESET)"
 	@echo "$(YELLOW)📁 Watching for changes in: $(FONTS_DIR)/, README.md, $(DOCS_DIR)/$(RESET)"
-	@cd $(DOCS_DIR) && hugo server --bind 127.0.0.1 --port 1313 --watch --poll 1s
+	@cd $(DOCS_DIR) && hugo server --contentDir ../$(FONTS_DIR) --bind 127.0.0.1 --port 1313 --watch --poll 1s
 
 .PHONY: clean
 clean: ## Clean generated files

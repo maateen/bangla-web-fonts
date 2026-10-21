@@ -56,6 +56,6 @@ body {
 
 ## License
 
-Glyphs are taken from "Lohit Bengali" made by Automatic Control Equipments, Pune, INDIA. Font adapted to UNICODE by the contributors of [Ekushey](www.ekushey.org) and TrueType hintings have been added by [Alamigr Mohammed](mailto:alamgir99@gmail.com) and [Ershadul Haq](mailto:ershad@gmail.com).
+Glyphs are taken from "Lohit Bengali" made by Automatic Control Equipments, Pune, INDIA. Font adapted to UNICODE by the contributors of [Ekushey](https://www.ekushey.org) and TrueType hintings have been added by [Alamigr Mohammed](mailto:alamgir99@gmail.com) and [Ershadul Haq](mailto:ershad@gmail.com).
 
 This font is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.

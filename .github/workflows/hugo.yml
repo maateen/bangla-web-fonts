@@ -10,7 +10,7 @@ name: Hugo site CI/CD
     types: [opened, synchronize, reopened]
 
 env:
-  HUGO_VERSION: 0.150.1
+  HUGO_VERSION: 0.164.0
   FONT_TOOLS_VERSION: 4.56.0
   CLOUDFLARE_CUSTOM_DOMAIN: ${{ vars.CLOUDFLARE_CUSTOM_DOMAIN }}
   CLOUDFLARE_PROJECT_NAME: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
