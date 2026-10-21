@@ -47,8 +47,8 @@ body {
 - **Family Name:** Siyam Rupali
 - **Subfamily:** Regular
 - **Version:** 1.070
-- **Altered & Hinted:** [Md. Tanbin Islam Siyam](potasiyam.wordpress.com)
-- **Font Programming:** [M. M. Rifat-Un-Nabi](www.vistaarc.com)
+- **Altered & Hinted:** [Md. Tanbin Islam Siyam](https://potasiyam.wordpress.com)
+- **Font Programming:** [M. M. Rifat-Un-Nabi](https://www.vistaarc.com)
 
 ## Features
 
