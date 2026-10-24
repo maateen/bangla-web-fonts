@@ -121,7 +121,7 @@ jobs:
       - name: Deploy to Cloudflare Pages (Production)
         if: github.event_name == 'push'
         id: deploy-prod
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -133,7 +133,7 @@ jobs:
       - name: Deploy to Cloudflare Pages (Preview)
         if: github.event_name == 'pull_request'
         id: deploy-preview
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
