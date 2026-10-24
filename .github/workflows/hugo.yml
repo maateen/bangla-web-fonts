@@ -22,10 +22,10 @@ permissions:
   issues: write
   pull-requests: write
 
-# Allow only one concurrent deployment
+# Keep one run per branch/PR; never let a PR run cancel a production deploy
 concurrency:
-  cancel-in-progress: true
-  group: "pages"
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+  group: "pages-${{ github.ref }}"
 
 # Default to bash
 defaults:
