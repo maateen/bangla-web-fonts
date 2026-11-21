@@ -8,21 +8,17 @@
 ![GitHub forks](https://img.shields.io/github/forks/maateen/bangla-web-fonts)
 ![GitHub Repo stars](https://img.shields.io/github/stars/maateen/bangla-web-fonts)
 
-This project aims to enhance the web by providing beautiful, fast, and accessible Bengali typography through **Cloudflare's Global CDN**. The fonts listed on the left are currently supported, with more to be added soon.
+Beautiful, fast, and accessible Bengali typography for the web, served from **Cloudflare's global CDN**.
 
 ## Features
 
-Our fonts are served through Cloudflare's global network, providing:
+- ⚡ **Lightning-fast delivery** from 300+ Cloudflare edge locations
+- 🌍 **Global reach** with low latency for readers worldwide
+- 🔄 **Smart caching** that cuts repeat downloads and bandwidth
+- 🧩 **Drop-in CSS** with no build step or JavaScript
+- 🔤 **WOFF2 and TTF** sources with `font-display: swap`
 
-- ⚡ **Lightning-fast delivery** from 300+ global edge locations
-- 🌍 **Global reach** ensuring fast font loading worldwide
-- 🔄 **Smart caching** reducing font loading times and bandwidth usage
-
-## Maintainer
-
-Maksudur Rahman Maateen is a DevOps/Platform Engineer with expertise in Cloud Infrastructure Architecture and Site Reliability Engineering. As an open-source advocate, he is maintaining the Bengali Font CDN project while exploring his passions for literature, culinary arts, and philosophical inquiry. Learn more about his work at [maateen.me](https://maateen.me/).
-
-## Community
+## Contributing
 
 We welcome contributions from the Bengali typography community! Our project includes:
 
@@ -36,28 +32,22 @@ We welcome contributions from the Bengali typography community! Our project incl
 
 All contributions are automatically acknowledged through our welcome system and can be formally recognized in our contributors registry.
 
-## Technical Implementation
+## Maintainer
 
-This website is:
-
-- Generated using [Hugo](https://gohugo.io/)
-- Built with the [hugo-book theme](https://github.com/alex-shpak/hugo-book) by Alex Shpak
-- Theme usage is subject to its original license terms
+Maksudur Rahman Maateen is an Engineering Manager with 9+ years of experience building and running cloud-native infrastructure at scale. He currently works at [Telus Health Engage](https://www.telushealth.com/en-de/solutions/engage), on a digital well-being platform serving Europe. A free and open-source software advocate since his college years, he spends most of his time studying leadership, cloud infrastructure, and site reliability engineering. In his spare time, he enjoys reading, cooking, and closely observing the life philosophies of people from different walks of life. Learn more about his work at [maateen.me](https://maateen.me/).
 
 ## License
 
-### Font Licenses
+### Fonts
 
-Each font distributed through this CDN comes with its own individual license. Users must comply with the specific license terms of each font they use. Please refer to the individual font pages for their respective license details.
+Each font keeps its own license. Check the individual font page before using or redistributing it, since the terms vary and some fonts are limited to preview and print use.
 
 ### Website Content
 
-The content of this website is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). This means you are free to:
+The website content is licensed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). You can copy, modify, distribute, and use it commercially without asking permission.
 
-- Copy, modify, distribute, and perform the work
-- Even for commercial purposes
-- All without asking permission
+Some content has been generated and reformatted with AI assistance. Every AI-assisted change is reviewed and edited by the maintainer before publication.
 
-Some content on this website has been generated and reformatted with AI assistance. All AI-generated content is thoroughly reviewed, verified, and edited by the maintainer for accuracy and completeness, ensuring all technical information and font metadata meets quality standards.
+## Credits
 
-**Note:** When using fonts from this CDN, please ensure you comply with the individual license terms of each font you implement.
+The site is generated with [Hugo](https://gohugo.io/) using the [hugo-book](https://github.com/alex-shpak/hugo-book) theme by Alex Shpak. Theme usage is subject to its original license terms.
